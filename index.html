@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+  <div class="container">
+    <h1>Temperature converter</h1>
+
+    <form >
+    <div class="input">Enter Temperature
+      <input type="number" id="temp-input" placehlder="Enter Temperature" value="0">
+    </div>
+
+    <div class="dropdowns">
+      <div class="from">
+        <p>From</p>
+        <div class="select-container">
+          <select class="select" id="from-select">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+       </select>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+      <div class="to">
+        <p>To</p>
+        <div class="select-container">
+          <select class="select" id="to-select">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <button id="con-btn">Convert</button>
+
+    <div class="result">
+      <span>Result</span>
+      <p id="result">result comes here</p>
+    </div>
+    </form>
+
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>
